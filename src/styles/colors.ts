@@ -1,0 +1,18 @@
+export const colors = {
+  "grey.800": "#1f1f1f",
+  "grey.700": "#4c5157",
+  "grey.600": "#878d94",
+  "grey.500": "#d9cff1",
+  "grey.400": "#ede9f8",
+  "grey.300": "#f4f2f9",
+  "yellow.700": "#e6ff45",
+  "yellow.500": "#ffd54b",
+  "yellow.50": "#f8f4c3",
+  "purple.500": "#6a11cd",
+  "red.500": "#ff5058",
+  "red.50": "#ffe5e6",
+  "green.500": "#72eab1",
+  "green.50": "#d7ffec",
+  "blue.500": "#368dff",
+  "blue.50": "#d1e5ff",
+};
