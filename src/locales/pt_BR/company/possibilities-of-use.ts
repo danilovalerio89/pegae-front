@@ -1,6 +1,13 @@
+import Branding from "src/assets/svgs/possibilities-use/Branding.svg";
+import Engagement from "src/assets/svgs/possibilities-use/Engagement.svg";
+import Loyalty from "src/assets/svgs/possibilities-use/Loyalty.svg";
+import Events from "src/assets/svgs/possibilities-use/Events.svg";
+import Marketing from "src/assets/svgs/possibilities-use/Marketing.svg";
+import Sales from "src/assets/svgs/possibilities-use/Sales.svg";
+
 export const card_brand = {
   card_select: {
-    icon: `src/assets/svgs/possibilities-use/Branding.svg`,
+    icon: Branding,
     text: `Branding`,
   },
   title: `Amplificando presença e valor de marca`,
@@ -15,7 +22,7 @@ export const card_brand = {
 
 export const card_engagement = {
   card_select: {
-    icon: `src/assets/svgs/possibilities-use/Engagement.svg`,
+    icon: Engagement,
     text: `Engajamento`,
   },
   title: `Criando cultura e conexão na era digital`,
@@ -29,7 +36,7 @@ export const card_engagement = {
 
 export const card_loyalty = {
   card_select: {
-    icon: `src/assets/svgs/possibilities-use/Loyalty.svg`,
+    icon: Loyalty,
     text: `Loyalty`,
   },
   title: `Experiências exclusivas, clientes apaixonados`,
@@ -43,7 +50,7 @@ export const card_loyalty = {
 
 export const card_events = {
   card_select: {
-    icon: `src/assets/svgs/possibilities-use/Events.svg`,
+    icon: Events,
     text: `Eventos`,
   },
   title: `Revolucionando o cenário esportivo e cultural`,
@@ -57,7 +64,7 @@ export const card_events = {
 
 export const card_marketing = {
   card_select: {
-    icon: `src/assets/svgs/possibilities-use/Marketing.svg`,
+    icon: Marketing,
     text: `Marketing`,
   },
   title: `Otimizando a captação de leads com ativos digitais`,
@@ -71,7 +78,7 @@ export const card_marketing = {
 
 export const card_sales = {
   card_select: {
-    icon: `src/assets/svgs/possibilities-use/Sales.svg`,
+    icon: Sales,
     text: `Vendas`,
   },
   title: `Ativos digitais na jornada 
