@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import i18n from "@/lib/i18n";
 import { useState } from "react";
+import MobileIMG from "@/assets/svgs/possibilities-use/MobileImg.png";
 
 export function PossibilitiesComp() {
   const i18nConst = i18n.t("sections.company.possibilities", {
@@ -71,7 +72,7 @@ export function PossibilitiesComp() {
           />
         </div>
         <div>
-          <img src="src/assets/svgs/possibilities-use/MobileImg.png" />
+          <img src={MobileIMG} />
         </div>
       </div>
       <Accordion type="single" collapsible className="w-full lg:hidden">
