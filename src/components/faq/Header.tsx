@@ -13,7 +13,7 @@ export function Header({ title, subtitle, info }: HeaderProps) {
         {info}
       </Content.HeaderInfo>
       <Content.Title className="my-5 text-grey.800">{title}</Content.Title>
-      <Content.HeaderSubtitle className="text-center">
+      <Content.HeaderSubtitle className="max-w-[680px] text-center">
         {subtitle}
       </Content.HeaderSubtitle>
     </Content.HeaderGroup>

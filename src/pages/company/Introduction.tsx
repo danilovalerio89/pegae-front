@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { t } from "i18next";
 import IntroductionImg from "@/assets/svgs/IntroductionImg.svg";
 import IntroductionImgDesktop from "@/assets/svgs/IntroductionDesktop.svg";
+import { goToGoogleForm } from "@/utils/go-to-google-form";
 
 export function Introduction() {
   return (
@@ -15,10 +16,17 @@ export function Introduction() {
           {t("sections.company.introduction.body")}
         </Content.BodyText>
         <Content.ButtonGroup className="mb-14 flex flex-col gap-4 lg:flex-row">
-          <Button className="rounded-full bg-red.500 font-normal">
+          {/* <Button
+            className="rounded-full bg-red.500 font-normal"
+            onClick={() => goToGoogleForm()}
+          >
             {t("sections.company.introduction.btn_team")}
-          </Button>
-          <Button variant={"white"} className="w-full lg:w-auto">
+          </Button> */}
+          <Button
+            variant={"white"}
+            className="w-full lg:w-auto"
+            onClick={() => goToGoogleForm()}
+          >
             {t("sections.company.introduction.btn_about")}
           </Button>
         </Content.ButtonGroup>

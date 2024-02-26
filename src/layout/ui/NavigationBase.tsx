@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { goToExternalUrl } from "@/utils/goToExternalUrl";
 import InstagramPurple from "@/assets/svgs/InstagramPurple.svg";
 import TwitterPurple from "@/assets/svgs/TwitterPurple.svg";
+import { goToGoogleForm } from "@/utils/go-to-google-form";
 
 export interface NavigationDefaultProps {
   isOpen: boolean;
@@ -22,14 +23,16 @@ export function NavigationDefault({ isOpen }: NavigationDefaultProps) {
           text={t("navigation_header.company")}
         />
         <Navigation.Action
+          disabled={true}
           color="text-purple.500"
           navigateTo="/user"
           text={t("navigation_header.user")}
         />
         <Navigation.Action
+          onClick={() => goToGoogleForm()}
           color="text-purple.500"
           navigateTo={
-            process.env.NODE_ENV === "development" ? "/dev" : "/contact"
+            process.env.NODE_ENV === "development" ? "/dev" : "/company"
           }
           text={
             process.env.NODE_ENV === "development"

@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import Check from "@/assets/svgs/possibilities-use/Check.svg";
+import { goToGoogleForm } from "@/utils/go-to-google-form";
 
 export interface TextList {
   content: {
@@ -19,12 +21,16 @@ export function TextList({ content, active }: TextList) {
       {content[active].tags.map((item, index) => (
         <div key={index}>
           <div className="mb-4 flex gap-2 px-3">
-            <img src="src/assets/svgs/possibilities-use/Check.svg" />
+            <img src={Check} />
             <p>{item}</p>
           </div>
         </div>
       ))}
-      <Button className="mt-8 w-fit px-11 py-3" variant={"purple"}>
+      <Button
+        className="ml-3 mt-8 w-fit px-11 py-3"
+        variant={"purple"}
+        onClick={() => goToGoogleForm()}
+      >
         Saiba mais
       </Button>
     </div>

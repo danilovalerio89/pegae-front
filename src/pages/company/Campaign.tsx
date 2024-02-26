@@ -7,6 +7,7 @@ import SmileIcon from "@/assets/svgs/SmileIcon.svg";
 import CreateCampaignIcon from "@/assets/svgs/CreateCampaignIcon.svg";
 import LampIcon from "@/assets/svgs/LampIcon.svg";
 import CampaignImg from "@/assets/svgs/CampaignImg.svg";
+import { goToGoogleForm } from "@/utils/go-to-google-form";
 
 export function Campaign() {
   return (
@@ -45,7 +46,11 @@ export function Campaign() {
             "sections.company.campaign.capture_valuable_insights.description",
           )}
         />
-        <Button variant={"purple"} className="my-9 w-full">
+        <Button
+          variant={"purple"}
+          className="my-9 w-full"
+          onClick={() => goToGoogleForm()}
+        >
           {t("sections.company.campaign.learn_more")}
         </Button>
       </div>

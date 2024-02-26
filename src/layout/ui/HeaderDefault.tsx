@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Logo from "@/assets/svgs/Logo.svg";
 import HamburgerMenu from "@/components/ui/hamburger";
 import { NavigationSocialMedia } from "./header/NavigationSocialMedia";
+import { goToGoogleForm } from "@/utils/go-to-google-form";
 
 export interface HeaderDefaultProps {
   isOpen: boolean;
@@ -23,14 +24,16 @@ export function HeaderDefault({ isOpen, setIsOpen }: HeaderDefaultProps) {
           text={t("navigation_header.company")}
         />
         <Navigation.Action
+          disabled
           color="text-purple.500"
           navigateTo="/user"
           text={t("navigation_header.user")}
         />
         <Navigation.Action
+          onClick={() => goToGoogleForm()}
           color="text-purple.500"
           navigateTo={
-            process.env.NODE_ENV === "development" ? "/dev" : "/contact"
+            process.env.NODE_ENV === "development" ? "/dev" : "/company"
           }
           text={
             process.env.NODE_ENV === "development"
