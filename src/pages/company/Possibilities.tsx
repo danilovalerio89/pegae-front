@@ -9,6 +9,7 @@ import {
 import i18n from "@/lib/i18n";
 import { useState } from "react";
 import MobileIMG from "@/assets/svgs/possibilities-use/MobileImg.png";
+import ToLeftArrow from "@/assets/svgs/ToLeftArrow.svg";
 
 export function PossibilitiesComp() {
   const i18nConst = i18n.t("sections.company.possibilities", {
@@ -71,8 +72,12 @@ export function PossibilitiesComp() {
             active={active}
           />
         </div>
-        <div>
+        <div className="relative">
           <img src={MobileIMG} />
+          <img
+            src={ToLeftArrow}
+            className="absolute hidden lg:-bottom-10 lg:-left-10 lg:z-10 lg:block"
+          />
         </div>
       </div>
       <Accordion type="single" collapsible className="w-full lg:hidden">

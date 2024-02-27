@@ -5,6 +5,7 @@ import Img3 from "@/assets/svgs/HowWork3.svg";
 import { HowItWork as HIW } from "@/components/how-it-work";
 import { Trans } from "react-i18next";
 import { t } from "i18next";
+import ToRightArrow from "@/assets/svgs/ToRightArrow.svg";
 
 export function HowItWork() {
   return (
@@ -22,7 +23,7 @@ export function HowItWork() {
         </Content.HeaderSubtitle>
       </Content.HeaderGroup>
 
-      <div className=" lg:m-full flex max-w-screen-xl overflow-x-auto lg:max-w-full lg:flex-row lg:justify-evenly lg:overflow-x-hidden">
+      <div className=" lg:m-full flex max-w-screen-xl overflow-x-auto lg:max-w-full lg:flex-row lg:justify-evenly lg:overflow-x-hidden lg:pb-12">
         <div className="flex gap-10 space-x-4 p-4 lg:w-full lg:justify-evenly">
           <HIW.Root>
             <HIW.Img src={Img1} />
@@ -38,13 +39,17 @@ export function HowItWork() {
             <HIW.Img src={Img2} />
           </HIW.Root>
 
-          <HIW.Root>
+          <HIW.Root className="relative">
             <HIW.Img src={Img3} />
 
             <HIW.Text>
               <Trans i18nKey="sections.company.how_it_work.box_3" />
             </HIW.Text>
           </HIW.Root>
+          <img
+            src={ToRightArrow}
+            className="absolute z-10 hidden lg:-bottom-[30px] lg:right-[200px] lg:block"
+          />
         </div>
       </div>
     </Content.Section>

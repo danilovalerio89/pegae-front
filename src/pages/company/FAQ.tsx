@@ -12,7 +12,7 @@ export function FAQ() {
   return (
     <Content.Section
       style={{ backgroundImage: `url(src/assets/BackgroundFAQ.png)` }}
-      className={`bg-faq relative bg-grey.400 bg-cover bg-no-repeat pb-6 lg:flex lg:h-auto lg:flex-col lg:pb-0`}
+      className={`bg-faq relative bg-grey.400 bg-cover bg-no-repeat pb-6 lg:flex lg:h-auto lg:flex-col lg:items-center lg:pb-0`}
     >
       <div className="absolute left-0 top-0 -z-10 h-10 w-full bg-grey.300"></div>
       <FAQComponent.Header
@@ -24,7 +24,7 @@ export function FAQ() {
       <Accordion
         type="single"
         collapsible
-        className="flex flex-col gap-2 rounded-sm"
+        className="flex flex-col gap-2 rounded-sm lg:max-w-[940px]"
       >
         {i18nOutside.map((item, index) => (
           <FAQComponent.Card

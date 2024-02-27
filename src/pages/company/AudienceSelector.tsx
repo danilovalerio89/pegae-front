@@ -2,10 +2,15 @@ import { AudienceSelector as ASComponent } from "@/components/audience-selector"
 import { Content } from "@/components/content";
 import { t } from "i18next";
 import { Trans } from "react-i18next";
+import PegaeIcon from "@/assets/svgs/PegaeIcon.svg";
 
 export function AudienceSelector() {
   return (
     <Content.Section className="bg-grey.300 lg:flex lg:h-auto lg:flex-col lg:items-start">
+      <img
+        src={PegaeIcon}
+        className="absolute hidden lg:-top-[60px] lg:right-12 lg:block"
+      />
       <Content.HeaderGroup>
         <Content.HeaderInfo className="text-purple.500">
           {t("sections.company.audience_selector.default.info")}

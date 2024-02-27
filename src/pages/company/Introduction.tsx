@@ -40,7 +40,7 @@ export function Introduction() {
         <img
           src={IntroductionImgDesktop}
           alt="Pegae APP"
-          className="absolute right-0 top-0 z-[-10] hidden h-full w-full lg:block"
+          className="absolute right-0 top-0 z-[-10] hidden w-full lg:flex lg:h-[850px]"
         />
       </Content.ImageRoot>
     </Content.Section>

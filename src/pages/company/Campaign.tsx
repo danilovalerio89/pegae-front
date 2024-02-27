@@ -8,17 +8,23 @@ import CreateCampaignIcon from "@/assets/svgs/CreateCampaignIcon.svg";
 import LampIcon from "@/assets/svgs/LampIcon.svg";
 import CampaignImg from "@/assets/svgs/CampaignImg.svg";
 import { goToGoogleForm } from "@/utils/go-to-google-form";
+import PegaeIcon from "@/assets/svgs/PegaeIcon.svg";
 
 export function Campaign() {
   return (
     <Content.Section className="height-screen-header rounded-t-[40px] bg-grey.300 lg:h-auto ">
+      <img
+        src={PegaeIcon}
+        alt="Pegae Icon"
+        className="hidden lg:absolute lg:-top-[50px] lg:right-[330px] lg:block"
+      />
       <CampaignHeader
         info={t("sections.company.campaign.info")}
         title={t("sections.company.campaign.title")}
         subtitle={t("sections.company.campaign.subtitle")}
         image={CampaignImg}
       />
-      <div className="height-screen-header flex h-auto flex-col gap-9 lg:grid lg:grid-cols-2 lg:content-end lg:gap-x-8">
+      <div className="height-screen-header flex h-auto flex-col gap-9 lg:mb-10 lg:grid lg:grid-cols-2 lg:content-end lg:gap-x-8">
         <Content.CampaignCard
           icon={MoneyIcon}
           title={t("sections.company.campaign.generate_revenue.title")}

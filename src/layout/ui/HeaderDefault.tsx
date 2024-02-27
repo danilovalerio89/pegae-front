@@ -15,7 +15,7 @@ export function HeaderDefault({ isOpen, setIsOpen }: HeaderDefaultProps) {
   const { t } = useTranslation();
 
   return (
-    <Header.Root className="lg:justify-start">
+    <Header.Root className=" lg:justify-start">
       <Header.Logo image={Logo} />
       <div className="hidden items-center lg:ml-10 lg:flex">
         <Navigation.Action
