@@ -7,9 +7,9 @@ import { goToGoogleForm } from "@/utils/go-to-google-form";
 
 export function Introduction() {
   return (
-    <Content.Section className="pt-16">
+    <Content.Section className="pt-16 lg:grid lg:[grid-template-columns:40%60%] ">
       <Content.SubSection>
-        <Content.Title className="lg:pr-10 2xl:text-[50px] 2xl:leading-[65px]">
+        <Content.Title className=" 2xl:text-[50px] 2xl:leading-[65px]">
           {t("sections.company.introduction.title")}
         </Content.Title>
         <Content.BodyText>
@@ -34,12 +34,12 @@ export function Introduction() {
       <Content.ImageRoot className="relative -z-10 flex max-w-3xl justify-center lg:w-full">
         <img
           src={IntroductionImg}
-          alt="Hurricane Purple"
+          alt="Pegae APP"
           className="relative lg:hidden"
         />
         <img
           src={IntroductionImgDesktop}
-          alt="Hurricane Purple"
+          alt="Pegae APP"
           className="absolute right-0 top-0 z-[-10] hidden h-full w-full lg:block"
         />
       </Content.ImageRoot>

@@ -114,8 +114,4 @@
   .base-query {
     @apply sm:m-auto sm:max-w-xl lg:mx-4 lg:max-w-full lg:px-36 lg:py-24 lg:pb-0 2xl:mx-auto 2xl:max-w-[1440px];
   }
-
-  .bg-faq {
-    background-image: url("src/assets/BackgroundFAQ");
-  }
 }

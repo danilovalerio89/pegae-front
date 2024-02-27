@@ -11,7 +11,8 @@ export function FAQ() {
 
   return (
     <Content.Section
-      className={`relative bg-grey.400 bg-[url('src/assets/BackgroundFAQ.png')] bg-cover bg-no-repeat pb-6 lg:flex lg:h-auto lg:flex-col lg:pb-0`}
+      style={{ backgroundImage: `url(src/assets/BackgroundFAQ.png)` }}
+      className={`bg-faq relative bg-grey.400 bg-cover bg-no-repeat pb-6 lg:flex lg:h-auto lg:flex-col lg:pb-0`}
     >
       <div className="absolute left-0 top-0 -z-10 h-10 w-full bg-grey.300"></div>
       <FAQComponent.Header
